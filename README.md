@@ -1,5 +1,3 @@
-Aquí tienes una versión más profesional del README para tu proyecto:
-
 # Python Web Scraping
 
 Este proyecto consiste en un script en Python diseñado para extraer información de productos, incluyendo ID, precio y imágenes, desde un sitio web de tienda. La información se basa en la estructura HTML de la página web y se exporta a un archivo Excel, almacenando las imágenes en una carpeta específica.
