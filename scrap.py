@@ -50,7 +50,8 @@ if response.status_code == 200:
     for i, product in enumerate(products, 1):
         name = product.find('h6').text.strip()
         code = name.split()[-1]
-        price = product.find('p').text.strip().split()[0].replace('$', '')
+        name = ' '.join(name.split()[:-1]) 
+        price = float(product.find('p').text.strip().split()[0].replace('$', '').replace(',', ''))
         image_url = product.find('img')['src']
         
         names.append(name)
